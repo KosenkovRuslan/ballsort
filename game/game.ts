@@ -53,7 +53,7 @@ namespace $ {
 
 		@ $mol_mem
 		tube_active( next?: $games_ballsort_tube | null ) {
-			if (next?.balls.length === 0) return null
+			if (next?.balls().length === 0) return null
 			if (next?.complete()) return null
 			return next ?? null
 		}
