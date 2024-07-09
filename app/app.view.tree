@@ -1,3 +1,9 @@
 $games_ballsort_app $mol_view
-	sub / \Ballsort
+	sub / 
+		<= Components $mol_list
+			rows /
+				<= Link $games_ballsort_link
+					title \Link
+					href \example.com
+					target \_blank
 
